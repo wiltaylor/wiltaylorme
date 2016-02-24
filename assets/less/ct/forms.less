@@ -1,0 +1,219 @@
+
+.contactForm{
+  textarea{
+    min-height: 236px;
+  }
+}
+
+.ct-contactForm--type1{
+  .contactForm{
+    .form-control{
+      background:rgba(255,255,255,0.2);
+      border: 2px solid #808080;
+      color: #333333;
+      &:focus{
+        border: 2px solid #d9d9d9;
+      }
+    }
+  }
+  .ct-form-group-label--float{
+    label{
+      color: #333333;
+    }
+  }
+}
+
+.ct-contactForm--type2{
+  .contactForm{
+    .form-control{
+      border-radius: 0;
+    }
+  }
+}
+
+.ct-contactForm--type3{
+  .contactForm{
+    .form-control{
+      border-radius: 4px;
+    }
+  }
+}
+
+.ct-contactForm--type4{
+  .contactForm{
+    .form-control{
+      border-radius: 25px;
+    }
+  }
+}
+
+.ct-contactForm--type2,
+.ct-contactForm--type3,
+.ct-contactForm--type4{
+  .contactForm {
+    .form-control {
+      background-color: #fff;
+      border: 1px solid #cccccc;
+      color: #333333;
+      &:focus{
+        border: 1px solid #d9d9d9;
+      }
+    }
+  }
+  .ct-form-group-label--float{
+    label{
+      color: #333333;
+    }
+  }
+}
+
+.input-lg, .form-group-lg .form-control{
+  font-size: 16px;
+}
+
+.form-group-float-label{
+  position: relative;
+}
+
+.form-group{
+  margin-bottom: 30px;
+}
+
+.onepager{
+  .form-control{
+    color: #fff;
+  }
+}
+
+.form-control{
+  color: #333333;
+  box-shadow: none!important;
+  border-radius: 4px;
+}
+
+.ct-form-group-label--float{
+  position: relative;
+  input.input-lg{
+    height: 55px;
+  }
+  input{
+    padding-right: 30px;
+    width: 100% !important;
+  }
+  button.button-arrow{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  /* we put label on top of the input*/
+  label{
+    position: absolute;
+    top: 50%;
+    margin-top: -11px;
+    left: 18px;
+    //color: #fff!important;
+    z-index: @z-index-1;
+    font-size: 16px;
+    white-space: nowrap;
+    cursor: text;
+    transition:all .1s ease;
+    margin-bottom: 0;
+    font-weight: 400!important;
+  }
+
+  textarea + label{
+    margin-top: auto;
+    top: 15px;
+  }
+
+  span.error{
+    font-size: 18px;
+  }
+
+    // for ie9 repeat values
+  input:focus + label {
+    font-size:12px;
+    font-weight:bold;
+    top: -6px;
+    left: 0;
+  }
+
+  input:valid + label {
+    font-size:12px;
+    font-weight:bold;
+    top: -6px;
+    left: 0;
+  }
+
+  textarea.notempty + label,
+  textarea:focus + label {
+    font-size:12px;
+    font-weight:bold;
+    top: -6px;
+    left: 0;
+  }
+  textarea:valid + label {
+    font-size:12px;
+    font-weight:bold;
+    top: -6px;
+    left: 0;
+  }
+
+  input.notempty + label,
+  input[value]:not(empty) + label{
+    font-size:12px;
+    font-weight:bold;
+    top: -6px;
+    left: 0;
+  }
+  textarea:focus + label {
+    top: -17px;
+  }
+  textarea:valid + label {
+    top: -17px;
+  }
+  textarea.notempty + label,
+  textarea[value]:not(empty) + label{
+    top: -17px;
+  }
+  input:valid + label {
+    color:green!important;
+  }
+  textarea:valid + label {
+    color:green!important;
+  }
+  input:focus:invalid + label {
+    color:inherit;
+  }
+  textarea:focus:invalid + label{
+    color:inherit;
+  }
+  input:required:valid + label::before {
+    color:green!important;
+  }
+  textarea:required:valid + label::before {
+    color:green!important;
+  }
+
+  ::-webkit-input-placeholder {
+    color: transparent;
+    display: none;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    color: transparent;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: transparent;
+  }
+
+  :-ms-input-placeholder {
+    color: transparent;
+  }
+}
+

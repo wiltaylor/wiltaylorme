@@ -1,0 +1,177 @@
+body{
+  font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+
+h1, .h1{
+  font-size: @h1;
+}
+h2, .h2{
+  font-size: @h2;
+}
+h3, .h3{
+  font-size: @h3;
+}
+h4, .h4{
+  font-size: @h4;
+}
+h5, .h5{
+  font-size: @h5;
+}
+h6, .h6{
+  font-size: @h6;
+}
+
+span{
+  font-size: 30px;
+}
+
+p{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.ct-glyph--text{
+  p{
+    font-size: 24px;
+    line-height: 27px;
+  }
+}
+
+.ct-text{
+  h1,h2,h3,h4,h5,h6{
+    font-size: 24px;
+  }
+}
+
+a{
+  .ct-m-transition(all, 0.2s, ease);
+  outline: none!important;
+  &:hover,&:visited,&:focus{
+    text-decoration: none;
+  }
+}
+
+.ct-text-parallax{
+  font-size: 16px;
+}
+
+.ct-textBox{
+  font-size: 18px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.ct-blackquote-customStyle{
+  margin: 0;
+  padding: 0;
+  border: none!important;
+  font-size: 48px;
+  line-height: 48px;
+  &:after{
+    font-family: fontawesome;
+    font-size: 14px;
+    position: relative;
+    bottom: 24px;
+    content: '\f10e';
+    left: 5px;
+  }
+}
+
+table{
+  th{
+    font-weight: normal;
+  }
+  a{
+    text-decoration: none;
+    &:hover, &:focus, &:visited{
+      text-decoration: none;
+    }
+  }
+  display: block;
+  caption{
+    font-size: 24px;
+    line-height: 24px;
+    white-space: nowrap;
+    color: #333333;
+  }
+  margin-bottom: 50px;
+  td{
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+    .ct-u-paddingBoth10;
+    font-size: 16px;
+    .ct-m-transition(all, 0.2s, ease);
+  }
+  th, td{
+    white-space: nowrap;
+  }
+  td{
+    width: 1%;
+  }
+}
+
+div[class^="col-"]:nth-child(2n){
+  table{
+    padding-left: 10px;
+  }
+}
+
+div[class^="col-"]:nth-child(1n){
+  table{
+    padding-right: 10px;
+  }
+}
+
+.small-only{
+  display: none;
+}
+
+.ct-text--change{
+  color: #1ca8dd;
+  font-size: 12px;
+}
+
+//Alerts
+
+.bg-success,
+.bg-info,
+.bg-warning,
+.bg-danger{
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 20px;
+  span{
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
+
+.bg-success{
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.bg-info{
+  background-color: #d9edf7;
+  color: #31708f;
+}
+
+.bg-warning{
+  background-color: #fcf8e3;
+  color: #8a6d3b;
+}
+
+.bg-danger{
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+//Progress bar
+
+.progress-bar{
+  background-color: #1ca8dd;
+}
